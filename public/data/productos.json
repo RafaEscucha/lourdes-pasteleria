@@ -1,0 +1,30 @@
+[
+    {
+        "id": 101,
+        "nombre": "Alfajor Maicena 1/4",
+        "precio": 3800,
+        "stock": 2,
+        "imagen": "/image/Alfajor Maicena.jpeg"
+    },
+    {
+        "id": 102,
+        "nombre": "Alfajor Choclate Negro 1/4",
+        "precio": 4800,
+        "stock": 32,
+        "imagen": "/image/Alfajor Chocolate.jpeg"
+    },
+    {
+        "id": 103,
+        "nombre": "Alfajor Merengue Choco 1/4",
+        "precio": 4800,
+        "stock": 16,
+        "imagen": "/image/Alfajor Merengue Choco.jpeg"
+    },
+    {
+        "id": 104,
+        "nombre": "Alfajor Oreo 1/4",
+        "precio": 5800,
+        "stock": 24,
+        "imagen": "/image/Alfajor Oreo.jpeg"
+    }
+]

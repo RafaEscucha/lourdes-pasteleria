@@ -1,0 +1,51 @@
+.tarjetaProducto {
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    background: var(--color-blanco);
+    box-shadow: 0 2px 8px rgba(0,0,0,0);
+    transition: transform 0.2s;
+    width: 280px;
+}
+
+.tarjetaProducto:hover {
+    transform: scale(1.05);
+}
+
+.tarjetaProductoImagen {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjetaProductoPrecio {
+    color: var(--color-acento);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .tarjetaProducto {
+        width: 220px;
+    }
+
+    .tarjetaProductoImagen {
+        height: 180px;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+
+    .tarjetaProducto {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .tarjetaProductoImagen {
+        height: 160px;
+    }
+}

@@ -1,0 +1,272 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    min-width: 320px;
+}
+
+/* Layout general */
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #DDBB77;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-section h1 {
+    font-size: 3.8rem;
+    color: black;
+    text-shadow:
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white;
+    font-family: "Dancing Script";
+}
+
+/* Navegación */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: black;
+    text-shadow:
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.contenido {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #DDBB77;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+/* Contenedor de empleados */
+
+.directorio {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta */
+
+.tarjeta-contacto {
+    width: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+/* Imagen */
+
+.contacto-foto {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.tarjeta-contacto h6 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.tarjeta-contacto p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.tarjeta-contacto small {
+    font-size: 0.75rem;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Formulario produtos*/
+
+.formulario-producto {
+    display: flex;
+    flex-direction: column;
+    max-width: 24rem;
+    width: 100%;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    gap: 16px;
+}
+.formulario-producto input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.formulario-producto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.formulario-producto button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .logo-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 75%;
+    }
+
+    .contenido {
+        padding: 1rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .directorio {
+        gap: 8px;
+    }
+
+    .tarjeta-contacto {
+        width: 120px;
+        padding: 8px;
+    }
+
+    .contacto-foto {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tarjeta-contacto h6 {
+        font-size: 0.8rem;
+    }
+
+    .tarjeta-contacto p {
+        font-size: 0.7rem;
+    }
+
+    .tarjeta-contacto small {
+        font-size: 0.6rem;
+    }
+    .formulario-producto {
+        width: 95%;
+        padding: 0.8rem;
+    }
+
+    .formulario-producto h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .formulario-producto input {
+        padding: 10px;
+    }
+
+    .formulario-producto button {
+        width: 100%;
+    }
+}

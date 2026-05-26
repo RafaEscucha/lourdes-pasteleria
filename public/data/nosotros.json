@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Rafael Escucha",
+        "email": "rafa@mail.com",
+        "puesto": "CEO",
+        "foto": "/image/Yo.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Reinhard Van Astrea",
+        "email": "reinhard@mail.com",
+        "puesto": "Gerente Seguridad",
+        "foto": "/image/Reinhard.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Satoru Gojo",
+        "email": "satoru@mail.com",
+        "puesto": "Gerente HSE",
+        "foto": "/image/Satoru.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Subaru Natsuki",
+        "email": "subaru@mail.com",
+        "puesto": "Gerente Estrategico",
+        "foto": "/image/Subaru.png"
+    }
+]
