@@ -1,20 +1,44 @@
-import { useState } from "react";
+/*import { useState } from "react";
 import FormularioProducto from "./FormularioProducto";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+
 
 export function FormularioContainer() {
     const [datosForm, setDatosForm] = useState({
+        id: '',
         nombre: '',
         precio: '',
         stock: '',
+        categoria: '',
+        detalle: '',
+        destacado: false,
     });
+
+    const limpiarFormulario = () => {
+        setDatosForm({
+            id: '',
+            nombre: '',
+            precio: '',
+            stock: '',
+            categoria: '',
+            detalle: '',
+            destacado: false
+        });
+        setImagenFile(null);
+    };
 
     const [imagenFile, setImagenFile] = useState(null);
 
     const manejarCambio = (evento) => {
-        const { name, value } = evento.target;
+        const { name, value, type, checked } = evento.target;
         setDatosForm({
             ...datosForm,
-            [name]: value
+            [name]:
+                type === "checkbox"
+                    ? checked
+                    : type === "number"
+                    ? Number(value)
+                    : value
         });
     };
 
@@ -47,18 +71,25 @@ export function FormularioContainer() {
                 const productoCompleto = {
                     ...datosForm,
                     // Agregamos la URL obtenida
-                    urlImagen: datosImgbb.data.url
+                    imagen: datosImgbb.data.url
                 };
                 // Por el momento hacemos un console.log
-                console.log('Enviando los siguientes datos COMPLETOS a la API:',
+                console.log('Enviando productos a Firebase:',
                     productoCompleto);
+
+                const db = getFirestore();
+                const productosColletion = collection(db, "productos");
+                await addDoc(productosColletion, productoCompleto);
+                alert("✅ El producto se cargó correctamente en Firebase.");
+                limpiarFormulario();
+
             } else {
                 throw new Error('La subida de la imagen a Imgbb falló.');
             }
         } catch (error) {
             console.error("Error en el proceso de envío:", error);
             alert("Hubo un error al subir la imagen. Por favor, intentá de nuevo.");
-    }
+        }
     };
     return (
         <FormularioProducto
@@ -68,4 +99,4 @@ export function FormularioContainer() {
             manejarCambioImagen={manejarCambioImagen}
         />
     );
-}
+}*/

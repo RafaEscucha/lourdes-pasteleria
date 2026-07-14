@@ -1,0 +1,74 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+}
+
+.itemAcciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itemInferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonComprar {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #FFD46A;
+
+    color: #3B2A21;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.botonComprar:hover {
+    background: #FFC83A;
+}
+
+.botonComprar:disabled {
+    background: #ddd;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.favorito {
+    font-size: 1.6rem;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+}
+
+.favorito:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width:768px){
+
+    .item{
+        gap:8px;
+    }
+
+    .botonComprar{
+        padding:10px;
+        font-size:.95rem;
+    }
+
+    .favorito{
+        font-size:1.4rem;
+    }
+
+}

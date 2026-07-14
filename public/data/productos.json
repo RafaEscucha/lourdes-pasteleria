@@ -4,27 +4,35 @@
         "nombre": "Alfajor Maicena 1/4",
         "precio": 3800,
         "stock": 2,
-        "imagen": "/image/Alfajor Maicena.jpeg"
+        "imagen": "/image/Alfajor Maicena.jpeg",
+        "destacado": true,
+        "detalle": "Delicioso Alfajor de Maicena para la venta"
     },
     {
         "id": 102,
         "nombre": "Alfajor Choclate Negro 1/4",
         "precio": 4800,
         "stock": 32,
-        "imagen": "/image/Alfajor Chocolate.jpeg"
+        "imagen": "/image/Alfajor Chocolate.jpeg",
+        "destacado": false,
+        "detalle": "Delicioso Alfajor de Chocolate para la venta"
     },
     {
         "id": 103,
         "nombre": "Alfajor Merengue Choco 1/4",
         "precio": 4800,
         "stock": 16,
-        "imagen": "/image/Alfajor Merengue Choco.jpeg"
+        "imagen": "/image/Alfajor Merengue Choco.jpeg",
+        "destacado": false,
+        "detalle": "Delicioso Alfajor de Merengue para la venta"
     },
     {
         "id": 104,
         "nombre": "Alfajor Oreo 1/4",
         "precio": 5800,
         "stock": 24,
-        "imagen": "/image/Alfajor Oreo.jpeg"
+        "imagen": "/image/Alfajor Oreo.jpeg",
+        "destacado": true,
+        "detalle": "Delicioso Alfajor Oreo para la venta"
     }
 ]

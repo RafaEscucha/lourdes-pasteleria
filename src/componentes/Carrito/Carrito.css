@@ -1,0 +1,227 @@
+/* ==========================
+   CONTENEDOR
+========================== */
+
+.cart-container{
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+.cart-container h1{
+
+    text-align:center;
+
+    color:#3B2A21;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================
+   ITEM
+========================== */
+
+.cart-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.cart-item img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+.cart-info{
+
+    flex:1;
+
+}
+
+.cart-info h4{
+
+    margin:0 0 10px;
+
+    color:#3B2A21;
+
+}
+
+.cart-info p{
+
+    margin:5px 0;
+
+    color:#555;
+
+}
+
+/* ==========================
+   TOTAL
+========================== */
+
+.cart-total{
+
+    margin-top:30px;
+
+    text-align:right;
+
+}
+
+.cart-total h3{
+
+    color:#D48806;
+
+    font-size:1.7rem;
+
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+.cart-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.cart-buttons button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.vaciar{
+
+    background:#E74C3C;
+
+    color:white;
+
+}
+
+.vaciar:hover{
+
+    background:#C0392B;
+
+}
+
+.comprar{
+
+    background:#FFD46A;
+
+    color:#3B2A21;
+
+}
+
+.comprar:hover{
+
+    background:#FFC83A;
+
+}
+
+/* ==========================
+   CARRITO VACÍO
+========================== */
+
+.cart-empty{
+
+    text-align:center;
+
+    margin:80px auto;
+
+}
+
+.cart-empty h1{
+
+    color:#3B2A21;
+
+}
+
+.cart-empty p{
+
+    color:#666;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.cart-item{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.cart-item img{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.cart-total{
+
+    text-align:center;
+
+}
+
+.cart-buttons{
+
+    flex-direction:column;
+
+}
+
+.cart-buttons button{
+
+    width:100%;
+
+}
+
+}

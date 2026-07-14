@@ -1,51 +1,136 @@
-.tarjetaProducto {
-    border-radius: 12px;
-    padding: 16px;
-    text-align: center;
-    background: var(--color-blanco);
-    box-shadow: 0 2px 8px rgba(0,0,0,0);
-    transition: transform 0.2s;
-    width: 280px;
+.tarjetaProducto{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    height:100%;
+
 }
 
-.tarjetaProducto:hover {
-    transform: scale(1.05);
+.tarjetaProducto:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
 }
 
-.tarjetaProductoImagen {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
+.tarjetaProductoImagen{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
 }
 
-.tarjetaProductoPrecio {
-    color: var(--color-acento);
-    font-weight: bold;
-    margin-top: 10px;
+
+.tarjetaContenido{
+
+    padding:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
 }
 
-/* Tablet */
-@media (max-width: 768px) {
+.tarjetaContenido h3{
 
-    .tarjetaProducto {
-        width: 220px;
-    }
+    margin:0;
 
-    .tarjetaProductoImagen {
-        height: 180px;
-    }
+    color:#4B3425;
+
+    font-size:1.2rem;
+
+    text-align:center;
+
+    min-height:55px;
+
 }
 
-/* Celular */
-@media (max-width: 480px) {
+.tarjetaProductoPrecio{
 
-    .tarjetaProducto {
-        width: 100%;
-        max-width: 280px;
-    }
+    font-size:1.4rem;
 
-    .tarjetaProductoImagen {
-        height: 160px;
-    }
+    color:#C67A2D;
+
+    font-weight:bold;
+
+    text-align:center;
+
+}
+
+.stock{
+
+    text-align:center;
+
+    color:#777;
+
+}
+
+
+.detalleLink{
+
+    text-decoration:none;
+
+    text-align:center;
+
+    background:#FFE7B3;
+
+    color:#4B3425;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.detalleLink:hover{
+
+    background:#F7D37C;
+
+}
+
+
+@media(max-width:768px){
+
+.tarjetaContenido{
+
+    padding:14px;
+
+}
+
+.tarjetaContenido h3{
+
+    font-size:1rem;
+
+}
+
+.tarjetaProductoPrecio{
+
+    font-size:1.2rem;
+
+}
+
 }
